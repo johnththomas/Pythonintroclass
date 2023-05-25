@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Enter name</title>
+    <script>
+     function submitForm(){
+        var name= document.getElementById("inputtext").value;
+        alert("Form submitted! name:" + name )
+        return false;// Prevent form submission
+     }
+
+    </script>
+</head>
+<body>
+    <form onsubmit="return submitForm()">
+        <label>Enter your name</label>
+        <input type="text" id="inputtext" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
